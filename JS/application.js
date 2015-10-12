@@ -7,8 +7,10 @@ $(document).ready(function(){
   // 3 == bottom right
   var wolfPosition = 0;
 
-  $("#start").on('click', function(){
+  $("#start").on('click', function(Z){
+
     console.log("clecked btn");
+
   });
 
   // listen to keyboard and:
@@ -21,7 +23,30 @@ $(document).ready(function(){
   // - if 'd' is pressed --> console.log 'd was pressed'
   //
   $(document).on("keyup", function(){
-    console.log()
+  var keycode = (event.keyCode ? event.keyCode : event.which);
+    if (keycode == '90'){
+      $('#wolf').attr('src','img/lb.png');
+        console.log('You pressed a "Z" key in keaboard');
+    }
+    else if (keycode == '65'){
+
+      $('#wolf').attr('src','img/lu.png');
+        console.log('You pressed a "A" key in keaboard');
+    }
+    else if (keycode == '88'){
+
+      $('#wolf').attr('src','img/rb.png');
+        console.log('You pressed a "X" key in keaboard');
+    }
+    else if (keycode == '83'){
+
+      $('#wolf').attr('src','img/ru.png');
+        console.log('You pressed a "S" key in keaboard');
+    }
   });
+
+
+
+
 
 });
