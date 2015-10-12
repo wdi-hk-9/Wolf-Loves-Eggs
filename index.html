@@ -1,40 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Wolf LIkes Eggs">
-    <meta name="author" content="Andrey">
-    <link href="css/main.css" rel="stylesheet">
-    <title>Wolf Love Eggs</title><meta charset="utf-8">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    </head>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"              content="width=device-width, initial-scale=1">
+  <meta name="description"           content="Wolf LIkes Eggs">
+  <meta name="author"                content="Andrey">
+  <title>Wolf Love Eggs</title>
+  <link href="css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="my-container">
 
-  <body>
+    <header class"text-left">
+      Wolf Loves Eggs
+      <button class="btn btn-info pull-right" type="submit" id="start">Start Game</button>
+    </header>
 
-  <div class="container">
-
-    <div class="row">
-      <div class="col-xs-9"><h1>Wolf Loves Eggs</h1></div>
-      <div class="col-xs-3"><input class="btn btn-primary" type="submit" value="Start Game"</div>
+    <div id="game">
+      <img src="img/lu.png">
     </div>
 
-    <div class="row">
-       <div class="col-xs-6"></div>
-      <div class="col-xs-6"><h2>Score:<h2></div>
-
-    </div>
-
-
-    <div class="row">
-      <div class="col-md-12">
-      <img src="./img/lu.png" class="img-responsive" alt="Responsive image">
-    </div>
-    </div>
+    <footer>
+      <p class="text-center">
+        Score: <span id="scoreEgg"></span>
+        Lost: <span id="LostEgg"></span>
+      </p>
+    </footer>
 
   </div>
-  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/application.js"></script>
+</body>
 </html>
