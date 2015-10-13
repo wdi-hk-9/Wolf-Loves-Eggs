@@ -13,6 +13,13 @@ header {
   margin-top: 10px;
 }
 
+#egg-first img {
+  height: 20px;
+  width: 30px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
 #game {
   background-image: url("../img/background.png");
   background-repeat: no-repeat;
@@ -21,14 +28,25 @@ header {
   width: 600px;
   margin: auto;
   height: 510px;
+  position: relative;
 }
 
-#game img {
+#wolf {
   height: 200px;
-  position: relative;
+  position: absolute;
   top: 212px;
   left: 200px;
 }
+
+.branch {
+  position: absolute;
+  width: 180px;
+}
+
+#branch-LU {
+  top: 137px;
+}
+
 
 footer {
   font-size: 20px;
