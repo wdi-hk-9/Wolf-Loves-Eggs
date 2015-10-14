@@ -34,8 +34,8 @@ header {
 #wolf {
   height: 200px;
   position: absolute;
-  top: 212px;
-  left: 200px;
+  top: 250px;
+  left: 150px;
 }
 
 .branch {
@@ -47,6 +47,31 @@ header {
   top: 137px;
 }
 
+#branch-LB {
+  top: 230px;
+}
+
+#branch-RU {
+  top: 157px;
+  margin-left: 385px;
+}
+
+#branch-RB {
+  top: 280px;
+  margin-left: 385px;
+}
+
+#branch-L-Broken {
+  top: 400px;
+  width: 50px;
+  margin-left: 120px;
+}
+
+#branch-R-Broken {
+  top: 400px;
+  width: 50px;
+  margin-left: 320px;
+}
 
 footer {
   font-size: 20px;

@@ -7,9 +7,9 @@ $(document).ready(function(){
   // 3 == bottom right
   var wolfPosition = 0;
 
-  $("#start").on('click', function(Z){
+  $("#start").on('click', function(whereEggGo){
 
-    console.log("clecked btn");
+    console.log("clicked btn");
 
   });
 
@@ -44,8 +44,71 @@ $(document).ready(function(){
         console.log('You pressed a "S" key in keaboard');
     }
   });
+//----------------------------------------------------------
+// set random number for falling eggs for 4 sides brunches
+// --> if random number = 0 ---> assign to left upper brunch
+// --> if random number = 1 ---> assign to left low brunch
+// --> if random number = 2 ---> assign to right upper brunch
+// --> if random number = 3 ---> assign to right low brunch
 
 
+//--------------------------------------------------------
+//set function timeout 5 sec for falling new eggs to random branches
+// var timeoutID = setTimeout (whereEggGo, 5000);
+var timeoutID = setTimeout (whereEggGo, 1000);
+
+  var randEgg = Math.floor(Math.random() *4);
+
+  function whereEggGo(){
+    var newRandEgg = randEgg;
+    if (newRandEgg == 0) {
+      $('#branch-LU').attr('src', 'img/tree-L1.png');
+
+      console.log("adding time out");
+      setTimeout(animeEgg, 500);
+
+      function animeEgg(){
+
+        // set the first image
+        $('#branch-LU').attr('src', 'img/tree-L1.png');
+
+        // setTimeout(function(){$('#branch-LU').attr('src', 'img/tree-L1.png');}, 500);
+
+        setTimeout(function(){$('#branch-LU').attr('src', 'img/tree-L2.png');}, 1000);
+        setTimeout(function(){$('#branch-LU').attr('src', 'img/tree-L3.png');}, 1500);
+        setTimeout(function(){$('#branch-LB').attr('src', 'img/tree-L4.png');}, 2000);
+        setTimeout(function(){$('#branch-L-Broken').attr('src', 'img/egg-broken-30percent.png');}, 2500);
+        setTimeout(function(){$('#branch-LU').attr('src', 'img/tree-L.png');}, 2200);
+        setTimeout(function(){$('#branch-LB').attr('src', 'img/tree-L.png');}, 2500);
+      }
+
+
+    } else if (newRandEgg == 1){
+      $('#branch-LB').attr('src', 'img/tree-L1.png');
+        setTimeout(function(){$('#branch-LB').attr('src', 'img/tree-L2.png');}, 1000);
+        setTimeout(function(){$('#branch-LB').attr('src', 'img/tree-L3.png');}, 1500);
+        setTimeout(function(){$('#branch-LB').attr('src', 'img/tree-L4.png');}, 2000);
+        setTimeout(function(){$('#branch-L-Broken').attr('src', 'img/egg-broken-30percent.png');}, 2500);
+        setTimeout(function(){$('#branch-LU').attr('src', 'img/tree-L.png');}, 2200);
+        setTimeout(function(){$('#branch-LB').attr('src', 'img/tree-L.png');}, 2500);
+    } else if (newRandEgg == 2){
+      $('#branch-RU').attr('src', 'img/tree-R1.png');
+        setTimeout(function(){$('#branch-RU').attr('src', 'img/tree-R2.png');}, 1000);
+        setTimeout(function(){$('#branch-RU').attr('src', 'img/tree-R3.png');}, 1500);
+        setTimeout(function(){$('#branch-RB').attr('src', 'img/tree-R4.png');}, 2000);
+        setTimeout(function(){$('#branch-R-Broken').attr('src', 'img/egg-broken-30percent.png');}, 2500);
+        setTimeout(function(){$('#branch-RU').attr('src', 'img/tree-R.png');}, 2200);
+        setTimeout(function(){$('#branch-RB').attr('src', 'img/tree-R.png');}, 2500);
+    } else if (newRandEgg == 3){
+      $('#branch-RB').attr('src', 'img/tree-R1.png');
+        setTimeout(function(){$('#branch-RB').attr('src', 'img/tree-R2.png');}, 1000);
+        setTimeout(function(){$('#branch-RB').attr('src', 'img/tree-R3.png');}, 1500);
+        setTimeout(function(){$('#branch-RB').attr('src', 'img/tree-R4.png');}, 2000);
+        setTimeout(function(){$('#branch-R-Broken').attr('src', 'img/egg-broken-30percent.png');}, 2500);
+        setTimeout(function(){$('#branch-RU').attr('src', 'img/tree-R.png');}, 2200);
+        setTimeout(function(){$('#branch-RB').attr('src', 'img/tree-R.png');}, 2500);
+    }
+}
 
 
 
