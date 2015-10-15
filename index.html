@@ -1,48 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport"              content="width=device-width, initial-scale=1">
-  <meta name="description"           content="Wolf Likes Eggs">
-  <meta name="author"                content="Andrey">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Wolf Likes Eggs">
+  <meta name="author" content="Andrey">
   <title>Wolf Love Eggs</title>
   <link href="css/main.css" rel="stylesheet">
   <link href="css/animation.css" rel="stylesheet">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light|Old+Standard+TT:400,400italic,700' rel='stylesheet' type='text/css'>
 </head>
+
 <body>
   <div class="my-container">
-
-    <header class"text-left">
-      <h1>Wolf Loves Eggs</h1>
-      <button class="btn btn-info pull-right" type="submit" id="start">Start Game</button>
-    </header>
-
-    <div id="banner"></div>
-
+    <div id="background">
+      <header class "text-left">
+        <h1>Wolf Loves Eggs</h1>
+        <button class="btn btn-info pull-right" type="submit" id="start">Start Game</button>
+      </header>
+    </div>
+    <div id="banner" style="display:none">GAME OVER !!!</div>
     <div id="game">
       <img id="branch-LU" class="branch" src="img/tree-L.png">
       <img id="branch-LB" class="branch" src="img/tree-L.png">
       <img id="branch-RU" class="branch" src="img/tree-R.png">
       <img id="branch-RB" class="branch" src="img/tree-R.png">
       <img id="branch-LB" class="branch" src="img/tree-L.png">
-
       <img id="wolf" src="img/lu.png">
     </div>
-
     <footer>
       <p class="text-center">
-        Score: <span id="scoreEgg">0</span>
-        Lost: <span id="LostEgg">0</span>
+        Score: <span id="scoreEgg">0</span> Lost: <span id="LostEgg">0</span>
       </p>
-      <p id='rules'></p>
+      <p id='rules'><strong><i>RULES:</i>  Try to catch as many falling eggs as possible by using the arrow keys - A, Z, S, X. Lost 4 eggs and game is over!</strong> </p>
     </footer>
-
   </div>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/application.js"></script>
 </body>
+
 </html>

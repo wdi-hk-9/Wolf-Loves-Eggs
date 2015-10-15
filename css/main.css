@@ -1,18 +1,27 @@
+header h1,
+#rules {
+  font-family: 'Shadows Into Light', cursive;
+  color: #e01a1a;
+}
+
 .my-container {
   width: 550px;
   min-width: 550px;
   margin: auto;
 }
 
+#background {
+  background-image: url("../img/background-header1.png");
+}
+
 header {
   font-size: 35px;
   margin-left: 23px;
-  width: 600px;
-
 }
 
 #start {
-  margin-top: -40px;
+  margin-top: -47px;
+  /*margin: 50px;*/
   border: -20px;
   border-radius: 5px;
   left: 0px;
@@ -21,25 +30,30 @@ header {
   transition-timing-function: linear, ease-in;
   width: 95px;
 }
+
 #start:hover {
   background: #ff7b29;
   border-radius: 50%;
 }
 
-
 #banner {
-  top: 205px;
-  left: 182px;
+  top: 112px;
+  left: 450px;
   width: 345px;
-  height: auto;
-  position: relative;
-  z-index:100;
+  height: 45px;
+  position: absolute;
+  border-radius: 25px;
+  z-index: 100;
   color: red;
-  font-size: 25px;
+  font-size: 32px;
+  text-shadow: white 2px 1px 0px;
+  text-align: center;
+  background-color: #FFF700;
+  border: 2px solid white;
 }
 
 #game {
-  background-image: url("../img/background.png");
+  background-image: url("../img/background1.png");
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 560px;
@@ -47,6 +61,7 @@ header {
   margin: auto;
   height: 510px;
   position: relative;
+  margin-top: -10px;
 }
 
 #wolf {
@@ -84,24 +99,51 @@ header {
   position: absolute;
 }
 
-.egg-left   { left:  10px; }
-.egg-right  { left: 530px; }
-.egg-topL   { top:  136px; }
-.egg-topR   { top:  155px; }
-.egg-bottom { top:  230px; }
+.egg-left {
+  left: 10px;
+}
+
+.egg-right {
+  left: 530px;
+}
+
+.egg-topL {
+  top: 136px;
+}
+
+.egg-topR {
+  top: 155px;
+}
+
+.egg-bottom {
+  top: 230px;
+}
 
 footer {
+  height: 30px;
   font-size: 20px;
   margin: auto;
-  font-family: avenir;
+  /*font-family: avenir;*/
   background-color: grey;
 }
- p {
+
+footer,
+p {
   color: white;
- }
+  margin: 0 0 0px;
+}
 
 span {
   margin-right: 50px;
   padding-left: 5px;
+}
 
+#rules {
+  color: black;
+  font-size: 15px;
+  background-color: #d0cdd3;
+  text-align: left;
+  padding-left: 5px;
+  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Old Standard TT', serif;
 }

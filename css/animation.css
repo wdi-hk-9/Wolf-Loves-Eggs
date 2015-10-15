@@ -1,15 +1,15 @@
 h1 {
+  padding-left: 10px;
+  padding-bottom: 5px;
   animation-name: slidein;
   animation-duration: 3s;
-
 }
 
 @keyframes slidein {
   from {
-    margin-left: 100%;
-    width: 100%;
+    margin-left: 90%;
+    width: 90%;
   }
-
   to {
     margin-left: 0%;
     width: 100%;
