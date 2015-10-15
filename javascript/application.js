@@ -160,16 +160,16 @@ $( document ).ready( function() {
   $( document ).on( "keyup", function() {
     var keycode = ( event.keyCode ? event.keyCode : event.which );
     if ( keycode == '90' ) {
-      $( '#wolf' ).attr( 'src', 'img/lb.png' );
+      $( '#wolf' ).attr( 'src', 'img/LB.png' );
       wolfPosition = 1;
     } else if ( keycode == '65' ) {
-      $( '#wolf' ).attr( 'src', 'img/lu.png' );
+      $( '#wolf' ).attr( 'src', 'img/LU.png' );
       wolfPosition = 0;
     } else if ( keycode == '88' ) {
-      $( '#wolf' ).attr( 'src', 'img/rbcopy.png' );
+      $( '#wolf' ).attr( 'src', 'img/RBcopy.png' );
       wolfPosition = 3;
     } else if ( keycode == '83' ) {
-      $( '#wolf' ).attr( 'src', 'img/rucopy.png' );
+      $( '#wolf' ).attr( 'src', 'img/RUcopy.png' );
       wolfPosition = 2;
     }
   } );
