@@ -4,7 +4,7 @@ $(document).ready(function(){
   var lostEggs = 0;
   var wolfPosition = 0;
   var gameTimer;
-
+  var chiken;
   var Egg = function() {
     this.CSS = [
       'egg-left  egg-topL',    // 0 = Left-Up
@@ -63,9 +63,11 @@ $(document).ready(function(){
                 $('.egg').remove();
                 console.log('game over');
                 clearInterval(gameTimer);
+                $('#banner').html("GAME OVER !!!");
               } else {
                 console.log('you lost the egg');
                 $('#LostEgg').html(lostEggs);
+
               }
             });
           }
@@ -99,6 +101,7 @@ $(document).ready(function(){
                 console.log('game over');
                 $('.egg').remove();
                 clearInterval(gameTimer);
+                $('#banner').html("GAME OVER !!!");
               } else {
                 console.log('you lost the egg');
                 $('#LostEgg').html(lostEggs);
@@ -118,6 +121,8 @@ $(document).ready(function(){
   };
 
   $("#start").on('click', function(){
+    $('#scoreEgg').html(0);
+    $('#LostEgg').html(0);
     gameTimer = setInterval(generateEggs, 1000);
   });
 
@@ -142,5 +147,6 @@ $(document).ready(function(){
       wolfPosition = 2;
     }
   });
+
 
 });

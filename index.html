@@ -8,15 +8,18 @@
   <meta name="author"                content="Andrey">
   <title>Wolf Love Eggs</title>
   <link href="css/main.css" rel="stylesheet">
+  <link href="css/animation.css" rel="stylesheet">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 <body>
   <div class="my-container">
 
     <header class"text-left">
-      Wolf Loves Eggs
+      <h1>Wolf Loves Eggs</h1>
       <button class="btn btn-info pull-right" type="submit" id="start">Start Game</button>
     </header>
+
+    <div id="banner"></div>
 
     <div id="game">
       <img id="branch-LU" class="branch" src="img/tree-L.png">
@@ -33,6 +36,7 @@
         Score: <span id="scoreEgg">0</span>
         Lost: <span id="LostEgg">0</span>
       </p>
+      <p id='rules'></p>
     </footer>
 
   </div>

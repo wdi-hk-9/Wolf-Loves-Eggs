@@ -7,13 +7,36 @@
 header {
   font-size: 35px;
   margin-left: 23px;
+  width: 600px;
+
 }
 
 #start {
-  margin-top: 10px;
+  margin-top: -40px;
+  border: -20px;
+  border-radius: 5px;
+  left: 0px;
+  transition-property: background, border-radius;
+  transition-duration: .2s, 1s;
+  transition-timing-function: linear, ease-in;
+  width: 95px;
+}
+#start:hover {
+  background: #ff7b29;
+  border-radius: 50%;
 }
 
 
+#banner {
+  top: 205px;
+  left: 182px;
+  width: 345px;
+  height: auto;
+  position: relative;
+  z-index:100;
+  color: red;
+  font-size: 25px;
+}
 
 #game {
   background-image: url("../img/background.png");
@@ -79,6 +102,6 @@ footer {
 
 span {
   margin-right: 50px;
-  padding-left: 2px;
+  padding-left: 5px;
 
 }
